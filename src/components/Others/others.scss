@@ -1,0 +1,83 @@
+.our-leadership {
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(42, 51, 66, 0) 0%,
+    #2a3342 100%
+  );
+  h2 {
+    color: white;
+  }
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #8896ab;
+  }
+}
+
+.pro-pic {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  position: relative;
+  float: right;
+  margin-top: 50px;
+}
+
+.lm-btn {
+  position: relative;
+  float: right;
+}
+
+.careers-head-txt {
+  font-weight: 500;
+  font-size: 72px;
+  line-height: 90px;
+  /* or 125% */
+
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  /* Gray/800 */
+
+  color: #333f51;
+}
+
+.identify-problem-txt {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+
+  color: #404f65;
+}
+
+.txt-1{
+  padding: 1% 5% 15%;
+}
+
+.txt-2{
+  padding: 3% 5% 10%;
+}
+
+.txt-3{
+  padding: 1% 0 15% 5%;
+  margin-left: 15%;
+}
+
+.identify-txt-2{
+  font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+/* or 150% */
+
+text-align: center;
+
+/* Gray/700 */
+width: 60%;
+color: #404F65;
+}
+
+
+.identify-txt-1{
+   text-align: center;
+}

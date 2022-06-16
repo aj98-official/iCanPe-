@@ -1,0 +1,14 @@
+.nav-custom{
+/* White/900 */
+padding: 0 3%;
+background: #FFFFFF;
+/* Shadow/3xl */
+box-shadow: 0px 32px 64px -12px rgba(42, 51, 66, 0.08);
+border-radius: 6px;
+position: sticky;
+z-index: 1;
+}
+
+.nav-link{
+    margin: 0 10px;
+}

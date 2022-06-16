@@ -1,0 +1,50 @@
+
+
+.slide{
+  text-align: center;
+}
+
+.card{
+  width: 80%;
+  height: 350px;
+  margin: auto;  
+  /* White/900 */
+  
+  background: #FFFFFF;
+  /* Shadow/3xl */
+  
+  box-shadow: 0px 32px 64px -12px rgba(42, 51, 66, 0.08);
+  border-radius: 6px;
+}
+
+.testimonial{
+  padding: 5% 0;
+}
+
+.star{
+  color: orange;
+}
+
+.card-txt{
+  // margin: auto;
+  text-align: left;
+  // margin-top: 5%;
+}
+.press{
+  padding-bottom: 5%;
+}
+.press-div{
+  margin: 0 3%;
+  padding: 5% 0;
+  background-color: #FFFFFF;
+}
+.press-container{
+  padding: 0 3%;
+}
+.btn-div{
+  // width: 15%;
+  margin-top: 50px;
+}
+.slider-container{
+  padding: 0 5rem;
+}

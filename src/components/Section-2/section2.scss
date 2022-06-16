@@ -1,0 +1,44 @@
+.heading-div {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.sec2-txt {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 60px;
+  /* or 125% */
+
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: black;
+}
+
+.feature-txt {
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.5vw;
+  line-height: 2.5vw;
+  color: black;
+  // width: 90%;
+}
+
+.feature-div {
+  width: 20%;
+  margin: 0 auto;
+  background-color: #ecb700;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 1% 1% 0;
+}
+
+.sec2{
+    padding: 5% 0;
+}
