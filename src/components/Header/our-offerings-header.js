@@ -1,6 +1,6 @@
 import React from "react";
-import PrimaryBtn from "../Buttton/btn";
 import "./header.scss";
+import Modal from "../Modal/modal";
 import Background from "../../assets/images/Our-offerings-banner.png";
 
 const OurOfferingsHeader = () => {
@@ -19,7 +19,16 @@ const OurOfferingsHeader = () => {
               New age Credit Management Platform to meet the needs of the
               contemporary times.
             </p>
-            <PrimaryBtn text="Request a Demo" className="btn-custom" />
+            <button
+              type="button"
+              class="btn primary-btn btn-custom"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Request a Demo
+            </button>
+
+            <Modal />
           </div>
         </div>
       </div>

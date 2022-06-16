@@ -1,7 +1,7 @@
 import React from "react";
-import PrimaryBtn from "../Buttton/btn";
 import "./header.scss";
 import Background from "../../assets/images/TopBannerAboutUs.png"
+import Modal from "../Modal/modal";
 
 const AboutUsHeader = () => {
   const divStyle = {
@@ -20,7 +20,16 @@ const AboutUsHeader = () => {
             <p className="head-sub-txt">
             ICanPe's digital-first collections platform helps lenders automate and improve collections of their revolving dues. 
             </p>
-            <PrimaryBtn text = "Request a Demo" className ="btn-custom"/>
+            <button
+              type="button"
+              class="btn primary-btn btn-custom"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Request a Demo
+            </button>
+
+            <Modal />
           </div>
         </div>
       </div>

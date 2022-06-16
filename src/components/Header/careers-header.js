@@ -1,6 +1,6 @@
 import React from "react";
-import PrimaryBtn from "../Buttton/btn";
 import "./header.scss";
+import Modal from "../Modal/modal";
 import Background from "../../assets/images/careers-banner.png";
 import pic from "../../assets/images/careers-banner-pic.png"
 
@@ -22,7 +22,16 @@ const CareersHeader = () => {
               ICanPe's digital-first collections platform helps lenders automate
               and improve collections of their revolving dues.
             </p>
-            <PrimaryBtn text="Request a Demo" className="btn-custom" />
+            <button
+              type="button"
+              class="btn primary-btn btn-custom"
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+            >
+              Request a Demo
+            </button>
+
+            <Modal />
           </div>
           <div className="col-lg-6 pt-5 ps-5">
               <img className="img-fluid" src={pic} alt="banner-img"/>
