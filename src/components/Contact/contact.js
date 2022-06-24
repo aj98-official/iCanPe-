@@ -4,7 +4,7 @@ import ContactForm from "./contact-form";
 import Label from "../Label/label";
 const Contact = () => {
   return (
-    <div id="contact" className="container pt-5 ps-4">
+    <div id="contact" className="container pt-5 md-contact-form">
       <div className="my-3"> <Label text="contact"/></div>
       <ContactForm />
       <div className="row pt-5">

@@ -91,3 +91,17 @@ $primary: #3b82f6;
   order: 0;
   flex-grow: 0;
 }
+
+
+
+@media only screen and (max-width: 767px) {
+   .md-contact-form{
+    text-align: center;
+   }
+   .icon{
+    margin: 20px auto;
+   }
+   .form-group{
+    text-align: left;
+   }
+}

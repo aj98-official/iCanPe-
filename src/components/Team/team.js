@@ -90,11 +90,11 @@ const Team = () => {
         </p>
         <PrimaryBtn text="Know More" className="mx-auto my-4 mt-4" />
       
-      <div className="row mb-4">
+      <div className="row mb-5 pb-5">
         {teamData.map((data) => {
           console.log(data);
           return (
-            <div className="col-lg-3 col-md-4 col-sm-6 mx-auto">
+            <div className="col-lg-3 col-md-4 col-sm-6 col-6 mx-auto">
               <TeamCard
                 name={data.name}
                 pic={data.pic}

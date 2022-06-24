@@ -13,3 +13,16 @@
 
   color: #8896ab;
 }
+
+
+
+@media only screen and (max-width: 767px) {
+  .md-footer{
+    text-align: left;
+    .md-footer-txt{
+      width: 60%;
+    }
+    padding-left: 20px;
+  }
+ 
+}

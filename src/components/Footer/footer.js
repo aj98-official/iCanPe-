@@ -15,15 +15,15 @@ const Footer = () => {
 
   return (
     // <div className="container">
-    <footer className="text-center text-lg-start bg-light text-muted" >
+    <footer className="text-lg-start bg-light" >
       
 
       <section className="footer-section pt-3" style = {divStyle}>
         <div className="container text-center text-md-start mt-5">
-          <div className="row mt-3">
-            <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div className="row mt-3 md-footer">
+            <div className="col-md-4 col-lg-3 mb-4">
               <img src={brandLogo} alt="icp-logo" />
-              <p className="mx-2 me-4 mb-5 mt-2">
+              <p className="mx-2 me-4 mb-5 mt-2 md-footer-txt">
                 Launch your own Software As A Service Application with CanPe
                 Solutions.
               </p>
@@ -46,7 +46,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div className="col-md-2 col-lg-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Products</h6>
               <p>
                 <a href="#!" className="text-reset">
@@ -75,7 +75,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div className="col-md-3 col-lg-2 mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-4">More About Us</h6>
               <p>
                 <a href="#!" className="text-reset">
@@ -104,7 +104,7 @@ const Footer = () => {
               </p>
             </div>
 
-            <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <div className="col-md-4 col-lg-3 mb-4">
               <PrimaryBtn text="Request a Demo" />
             </div>
           </div>

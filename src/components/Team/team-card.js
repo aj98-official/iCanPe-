@@ -10,7 +10,7 @@ const TeamCard = (props) => {
          twitter = props.twitter,
          insta = props.insta;
     
-    console.log(name);     
+//     console.log(name);     
    return (
        <div className="mx-auto team-card my-4">
             <img className="my-2 team-pro-pic" src = {pic} alt = "profile-pic" />
