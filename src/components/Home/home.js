@@ -7,12 +7,14 @@ import Section3 from "../Section-3/Section3";
 import Testimonial from "../Testimonial/testimonial";
 import Team from "../Team/team";
 import Contact from "../Contact/contact";
+import Modal from "../Modal/modal";
 import Footer from "../Footer/footer";
 
 export default function Home (){
     return (
         <div>
           <NavBar />
+          <Modal />
           <Header />
           <Section1 />
           <Section2 />

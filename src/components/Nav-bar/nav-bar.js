@@ -1,14 +1,14 @@
 import React from "react";
 import logo from "../../assets/brand-icon/ICPLogo.png";
-import "./nav-bar.scss"
+import "./nav-bar.scss";
 
 const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light nav-custom">
       <div className="container-fluid">
-      <a className="navbar-brand" href="/">
-      <img src={logo} alt="logo" width="90" height="48" />
-      </a>
+        <a className="navbar-brand" href="/">
+          <img src={logo} alt="logo" width="90" height="48" />
+        </a>
         <button
           className="navbar-toggler"
           type="button"
@@ -49,8 +49,13 @@ const NavBar = () => {
               </a>
             </li>
           </ul>
-          <button className="btn btn-outline-dark my-2" type="submit">
-                Get Started
+          <button
+            className="btn secondary-color my-2"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+            type="button"
+          >
+            Get Started
           </button>
         </div>
       </div>

@@ -8,7 +8,7 @@ const Contact = () => {
       <div className="my-3"> <Label text="contact"/></div>
       <ContactForm />
       <div className="row pt-5">
-        <div className="col-md-3">
+        <div className="col-lg-3 col-md-6 mt-4">
           <div className="dbox w-100">
             <div className="icon d-flex align-items-center justify-content-center">
               <span className="fa fa-paper-plane"></span>
@@ -21,7 +21,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-3">
+        <div className="col-lg-3 col-md-6 mt-4">
           <div className="dbox w-100">
             <div className="icon d-flex align-items-center justify-content-center">
               <span className="fa fa-phone"></span>
@@ -34,7 +34,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-3">
+        <div className="col-lg-3 col-md-6 mt-4">
           <div className="dbox w-100">
             <div className="icon d-flex align-items-center justify-content-center">
               <span className="fa fa-map-marker"></span>
@@ -45,7 +45,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="col-md-3">
+        <div className="col-lg-3 col-md-6 mt-4">
           <div className="dbox w-100">
             <div className="icon d-flex align-items-center justify-content-center">
               <span className="fa fa-globe"></span>

@@ -5,7 +5,7 @@ import useWindowDimensions from "../../Tools/window-dimensions";
 const ContactForm = () => {
   const size = useWindowDimensions();
   return (
-    <div className="pb-5">
+    <div className="">
       <div className="row">
         <div className="col">
           <h1 className="mb-4">Want to learn more about our product?</h1>
@@ -77,7 +77,7 @@ const ContactForm = () => {
                 <button
                   style={{ width: "100%" }}
                   type="submit"
-                  className="btn btn primary-btn btn-lg btn-block"
+                  className="btn btn primary-btn btn-lg"
                 >
                   {" "}
                   Request a Demo{" "}

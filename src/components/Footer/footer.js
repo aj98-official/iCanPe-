@@ -1,11 +1,9 @@
 import React from "react";
 import brandLogo from "../../assets/brand-icon/ICPLogo.png";
 import background from "../../assets/images/Pattern-Light-3.png";
-import PrimaryBtn from "../Buttton/btn";
+// import PrimaryBtn from "../Buttton/btn";
 import "./footer.scss";
 const Footer = () => {
-
-
   const divStyle = {
     backgroundImage: `url(${background})`,
     backgroundSize: "cover",
@@ -15,10 +13,8 @@ const Footer = () => {
 
   return (
     // <div className="container">
-    <footer className="text-lg-start bg-light" >
-      
-
-      <section className="footer-section pt-3" style = {divStyle}>
+    <footer className="text-lg-start bg-light">
+      <section className="footer-section pt-3" style={divStyle}>
         <div className="container text-center text-md-start mt-5">
           <div className="row mt-3 md-footer">
             <div className="col-md-4 col-lg-3 mb-4">
@@ -105,7 +101,14 @@ const Footer = () => {
             </div>
 
             <div className="col-md-4 col-lg-3 mb-4">
-              <PrimaryBtn text="Request a Demo" />
+              <button
+                className="btn primary-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                type="button"
+              >
+                Request a Demo
+              </button>
             </div>
           </div>
         </div>

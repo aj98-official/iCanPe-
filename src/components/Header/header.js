@@ -5,7 +5,6 @@ import Box from "../../assets/images/3dBox.png";
 import Background from "../../assets/images/homebanner.svg";
 import backgroundSm from "../../assets/images/homebanner-mobile.png";
 import backgroundMd from "../../assets/images/homebanner-md.png";
-import Modal from "../Modal/modal";
 import useWindowDimensions from "../../Tools/window-dimensions";
 
 const Header = () => {
@@ -34,14 +33,12 @@ const Header = () => {
 
             <button
               type="button"
-              class="btn primary-btn btn-custom"
+              class="btn primary-btn btn-custom mt-5"
               data-bs-toggle="modal"
               data-bs-target="#exampleModal"
             >
               Request a Demo
             </button>
-
-            <Modal />
           </div>
 
           <div className="col-lg-6">
