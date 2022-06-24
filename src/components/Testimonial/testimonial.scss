@@ -6,7 +6,7 @@
 
 .card{
   width: 80%;
-  height: 350px;
+  height: 400px;
   margin: auto;  
   /* White/900 */
   
@@ -47,4 +47,19 @@
 }
 .slider-container{
   padding: 0 5rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .testimonial{
+    padding: auto 0;
+  }
+  .slider-container{
+    padding: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .card{
+    height: auto;
+  }
 }

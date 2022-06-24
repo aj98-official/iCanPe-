@@ -2,14 +2,21 @@ import React from "react";
 // import PrimaryBtn from "../Buttton/btn";
 import "./header.scss";
 import Box from "../../assets/images/3dBox.png";
-import Background from "../../assets/images/Radial.png";
+import Background from "../../assets/images/homebanner.svg";
+import backgroundSm from "../../assets/images/homebanner-mobile.png";
+import backgroundMd from "../../assets/images/homebanner-md.png";
 import Modal from "../Modal/modal";
+import useWindowDimensions from "../../Tools/window-dimensions";
 
 const Header = () => {
+
+  var size = useWindowDimensions();
+
   const divStyle = {
-    backgroundImage: `url(${Background})`,
+    backgroundImage: (size <= 991)?`url(${backgroundSm})`: (size <= 1199)? `url(${backgroundMd})` :`url(${Background})`,
     backgroundSize: "cover",
-    backgroundPosition: "center center",
+    paddingBottom: "15%"
+    // backgroundPosition: "center center",
   };
   return (
     <div className="header" style={divStyle}>
@@ -36,8 +43,9 @@ const Header = () => {
 
             <Modal />
           </div>
+
           <div className="col-lg-6">
-            <img className="img-fluid header-img" src={Box} alt="3d-box-img" />
+              {(size < 1200) ?<img className="header-img" src={Box} alt= "box-img"/> : ""}
           </div>
         </div>
       </div>
