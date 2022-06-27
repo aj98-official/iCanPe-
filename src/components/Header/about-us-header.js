@@ -1,13 +1,18 @@
 import React from "react";
 import "./header.scss";
 import Background from "../../assets/images/TopBannerAboutUs.png"
+import BackgroundMd from "../../assets/images/our-offerings-header-md.png";
 import Modal from "../Modal/modal";
+import useWindowDimensions from "../../Tools/window-dimensions";
 
 const AboutUsHeader = () => {
+
+  const size = useWindowDimensions();
   const divStyle = {
-    backgroundImage: `url(${Background})`,
+    backgroundImage: size > 991 ? `url(${Background})` : `url(${BackgroundMd})`,
     backgroundSize: "cover",
-    backgroundPosition: "center center"
+    backgroundPosition: "center center",
+    backgroundColor: "#F0F0F0",
   }
   return (
     <div className="header" style = {divStyle}>

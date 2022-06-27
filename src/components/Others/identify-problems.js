@@ -1,9 +1,13 @@
 import React from "react";
 import layer from "../../assets/images/our-offerings-pic-3.png";
 import pic from "../../assets/images/Arrow-forward.png";
+
+import useWindowDimensions from "../../Tools/window-dimensions";
 import "./others.scss";
 
 export default function IdentifyProblems() {
+
+  const size = useWindowDimensions();
   const divStyle = {
     backgroundImage: `url(${layer})`,
     // backgroundSize: "cover",
@@ -14,19 +18,19 @@ export default function IdentifyProblems() {
     <div className="pb-5">
       <div className="container">
         <div className="row mt-5">
-          <span className="col-1">
-            <img src={pic} alt="arrow-icon" />
+          <span className="col-lg-1 col-md-2 d-flex justify-content-center">
+            <img src={pic} alt="arrow-icon" className="img-fluid"/>
           </span>
-          <div className="col">
+          <div className={"col " + ((size < 767)? "text-center" : "")}>
             <h1 className="mt-2 mb-4">Identifying your problems</h1>
           </div>
         </div>
       </div>
 
-      <div style={divStyle} className="py-5">
+      <div style={divStyle} className="question-mark">
         <div className="container">
-          <div className="row pt-5">
-            <div className="col-lg-5 ms-5 me-5 pe-5">
+          <div className="row mt-5">
+            <div className={"col-lg-5 " +( (size > 991) ? "ms-5 me-5 pe-5 ": "")}>
               <p className="identify-problem-txt txt-1">
                 Do you want to improve your debt collections significantly?
               </p>
@@ -35,11 +39,11 @@ export default function IdentifyProblems() {
                 down?
               </p>
             </div>
-            <div className="col-lg-5 ms-5 ps-5">
+            <div className={"col-lg-5 "+ ((size > 991) ? "ms-5 ps-5" : "")}>
               <p className="identify-problem-txt txt-3">
                 Are your agents focusing on the high priority borrowers?
               </p>
-              <p className="identify-problem-txt ms-5 mb-5 ps-5">
+              <p className={"identify-problem-txt " + ((size > 991) ? "ms-5 mb-5 ps-5" : "")}>
                 Is your team failing to achieve an optimum rate of recovery?
               </p>
               <p className="identify-problem-txt txt-5 mt-5">

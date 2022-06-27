@@ -1,17 +1,19 @@
 import React from "react";
 import pic from "../../assets/images/Arrow-forward.png";
-import pic2 from "../../assets/images/our-offerings-4.png";
+import pic2 from "../../assets/images/offering_last.svg";
+import useWindowDimensions from "../../Tools/window-dimensions";
 
 import "./others.scss";
 
 export default function ImplementSolution() {
+  const size = useWindowDimensions()
   return (
     <div className="container">
       <div className="row mt-5">
-        <span className="col-lg-1 col-md-2 col-sm-2">
+        <span className={"col-lg-1 col-md-2 col-sm-12 " + ((size < 767) ?"d-flex justify-content-center" : "")}>
           <img src={pic} alt="arrow-icon" className="img-fluid" />
         </span>
-        <div className="col-10">
+        <div className={(size > 767) ? "col-10" : "col-12 text-center"}>
           <h1 className="mt-2 mb-4">How do we implement the solution?</h1>
           <p>
             At iCanpe, we scale up your recovery operations with a robust and

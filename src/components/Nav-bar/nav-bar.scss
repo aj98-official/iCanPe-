@@ -12,3 +12,13 @@ z-index: 1;
 .nav-link{
     margin: 0 10px;
 }
+
+.nav-link{
+    &:hover{
+        cursor:pointer;
+    }
+}
+
+.navbar{
+    height: auto;
+}

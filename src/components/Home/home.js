@@ -10,7 +10,10 @@ import Contact from "../Contact/contact";
 import Modal from "../Modal/modal";
 import Footer from "../Footer/footer";
 
+import useWindowDimensions from "../../Tools/window-dimensions";
+
 export default function Home (){
+  const size = useWindowDimensions();
     return (
         <div>
           <NavBar />
@@ -18,7 +21,7 @@ export default function Home (){
           <Header />
           <Section1 />
           <Section2 />
-          <Section3 />
+          {(size > 991) ?<Section3 /> : ""}
           <Testimonial />
           <Team />
           <Contact />

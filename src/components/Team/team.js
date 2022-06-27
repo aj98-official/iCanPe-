@@ -1,11 +1,14 @@
 import React from "react";
 import background from "../../assets/images/Pattern-Light-2.png";
-import PrimaryBtn from "../Buttton/btn";
+
+
+// import PrimaryBtn from "../Buttton/btn";
 import TeamCard from "./team-card";
 import Label from "../Label/label";
 import Pic from "../../assets/images/pro-pic-team.png";
 
 const Team = () => {
+
   const teamData = [
     {
       pic: Pic,
@@ -88,7 +91,7 @@ const Team = () => {
           Highly professional and capable of running your business across all
           digital channels.
         </p>
-        <PrimaryBtn text="Know More" className="mx-auto my-4 mt-4" />
+        <button  className="mx-auto my-4 mt-4 primary-btn btn" > Know More </button> 
       
       <div className="row mb-5 pb-5">
         {teamData.map((data) => {

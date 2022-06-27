@@ -1,8 +1,10 @@
 import React from "react";
 import pic2 from "../../assets/images/About-us-img.png";
 import pic from "../../assets/images/Arrow-forward.png";
+import useWindowDimensions from "../../Tools/window-dimensions";
 
 export default function OurBelieve() {
+  const size = useWindowDimensions();
   return (
     <div className="container py-5 px-5">
       <div className="text-align-center justify-content-center d-flex my-5">
@@ -11,9 +13,13 @@ export default function OurBelieve() {
       <h1 className="mb-4">Our Believe</h1>
       <h2 className="my-5">Vision</h2>
       <div className="row">
-        <div className="col-lg-1 col-md-2">
-          <img src={pic} alt="arrow-icon" />
-        </div>
+        {size > 767 ? (
+          <div className="col-lg-1 col-md-2">
+            <img src={pic} alt="arrow-icon" className="img-fluid" />
+          </div>
+        ) : (
+          ""
+        )}
         <div className="col">
           <p>
             With constantly developing technology we aim to be an end-to-end
@@ -24,9 +30,13 @@ export default function OurBelieve() {
       </div>
       <h2 className="my-5">Mission</h2>
       <div className="row">
-        <div className="col-lg-1 col-md-2">
-          <img src={pic} alt="arrow-icon" />
-        </div>
+        {size > 767 ? (
+          <div className="col-lg-1 col-md-2">
+            <img src={pic} alt="arrow-icon" className="img-fluid" />
+          </div>
+        ) : (
+          ""
+        )}
         <div className="col">
           <p>
             To achieve our objective, we are swiftly developing our technology

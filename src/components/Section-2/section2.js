@@ -1,10 +1,11 @@
 import React from "react";
 import "./section2.scss";
 import pic from "../../assets/images/section-2-img.png";
-import pic1 from "../../assets/images/sec2-1.png";
-import pic2 from "../../assets/images/sec2-2.png";
-import pic3 from "../../assets/images/sec2-3.png";
-import pic4 from "../../assets/images/sec2-4.png";
+// import pic1 from "../../assets/images/sec2-1.png";
+// import pic2 from "../../assets/images/sec2-2.png";
+// import pic3 from "../../assets/images/sec2-3.png";
+// import pic4 from "../../assets/images/sec2-4.png";
+import pic5 from "../../assets/images/sec2-img-all.png";
 
 import useWindowDimensions from "../../Tools/window-dimensions";
 
@@ -42,8 +43,8 @@ const Section2 = () => {
           </div>
         </div>
       ) : (
-        <div>
-          <div className="row">
+        <div className="d-flex justify-content-center">
+          {/* <div className="row">
             <div className="col py-4 text-center">
               <img className="img-fluid" src={pic1} alt="pic-1" />
               <div className=" feature-div my-3">
@@ -58,8 +59,8 @@ const Section2 = () => {
                 <p className="feature-txt">Compassionate approach </p>
               </div>
             </div>
-          </div>
-          <div className="row">
+          </div> */}
+          {/* <div className="row">
             <div className="col py-4 text-center">
               <img className="img-fluid" src={pic3} alt="pic-1" />
               <div className=" feature-div my-3">
@@ -74,7 +75,9 @@ const Section2 = () => {
                 <p className="feature-txt">AI based recovery prediction</p>
               </div>
             </div>
-          </div>
+          </div> */}
+
+          <img src={pic5} alt = "pic" className="img-fluid"/>
         </div>
       )}
     </div>

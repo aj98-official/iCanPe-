@@ -2,6 +2,7 @@ import React from "react";
 import Background from "../../assets/images/section-1-background.png";
 import Label from "../Label/label";
 import Pic from "../../assets/images/sec1-img.png";
+import Pic2 from "../../assets/images/sec2-img-2.png"
 import "./section1.scss";
 
 import useWindowDimensions from "../../Tools/window-dimensions";
@@ -56,8 +57,8 @@ const Section1 = () => {
           </div>
         ) : (
           <div className="md">
-            <div className="rectangle">
-              <img className="sec-img img-fluid" src={Pic} alt="product-img" />
+            <div className="">
+              <img className="img-fluid" src={Pic2} alt="product-img" />
             </div>
 
             <div className="md-purpose-container">

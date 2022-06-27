@@ -4,8 +4,11 @@ import pic from "../../assets/images/Arrow-forward.png";
 import pic2 from "../../assets/images/Careers-pic-1.png";
 import layer from "../../assets/images/Careers-layer.png";
 import Label from "../Label/label";
+import useWindowDimensions from "../../Tools/window-dimensions";
 
 export default function WorkingWithUs() {
+
+  const size = useWindowDimensions();
   const divStyle = {
     backgroundImage: `url(${layer})`,
     // backgroundSize: "cover",
@@ -20,16 +23,16 @@ export default function WorkingWithUs() {
           <div className="col-lg-6">
             <img className="img-fluid" src={pic2} alt="team-img" />
           </div>
-          <div className="col-lg-6">
+          <div className={"col-lg-6 " + ((size < 991) ? "mt-5": "")}>
             <div className="mb-4">
               {" "}
               <Label text="Working  With Us" />
             </div>
             <h1 className="mb-4">Working With Us</h1>
             <div className="row">
-              <div className="col-2">
-                <img src={pic} alt="arrow-icon" />
-              </div>
+              {(size > 767) ?<div className="col-2">
+                <img src={pic} alt="arrow-icon" className="img-fluid"/>
+              </div> : ""}
               <div className="col">
                 <p>
                   At iCanPe, we have developed our core values based on the

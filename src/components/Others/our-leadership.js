@@ -1,6 +1,5 @@
 import React from "react";
 import Label from "../Label/label";
-import PrimaryBtn from "../Buttton/btn";
 import pic from "../../assets/images/Arindham-sir-pic.png";
 import background from "../../assets/images/Pattern-Dark.png";
 
@@ -47,8 +46,10 @@ export default function OurLeaderShip() {
             <p>Founder and CEO, iCanPe</p>
           </div>
           <div className="col-lg-6 ">
-            <PrimaryBtn text="Learn More" className="lm-btn"/>
+            <button className="lm-btn btn primary-btn">Learn More</button>
+            <div className="py-5">
             <img className="img-fluid pro-pic" src={pic} alt="pro-pic"/>
+            </div>
           </div>
         </div>
       </div>

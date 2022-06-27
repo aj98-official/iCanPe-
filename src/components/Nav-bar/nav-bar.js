@@ -1,8 +1,12 @@
 import React from "react";
 import logo from "../../assets/brand-icon/ICPLogo.png";
+import {useNavigate} from 'react-router-dom';
 import "./nav-bar.scss";
 
 const NavBar = () => {
+
+  const navigate = useNavigate();
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light nav-custom">
       <div className="container-fluid">
@@ -22,19 +26,19 @@ const NavBar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav m-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
+            <li className="nav-item mb-2">
+              <a className="nav-link active" aria-current="page"  onClick={() => navigate('/')}>
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/about-us">
+              <a className="nav-link"  onClick={() => navigate('/about-us')}>
                 About Us
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="/our-offerings">
+              <a className="nav-link"  onClick={() => navigate('/our-offerings')}>
                 Our Offerings
               </a>
             </li>
@@ -44,13 +48,13 @@ const NavBar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/careers">
+              <a className="nav-link"  onClick={() => navigate('/careers')}>
                 Careers
               </a>
             </li>
           </ul>
           <button
-            className="btn secondary-color my-2"
+            className="btn secondary-color my-3"
             data-bs-toggle="modal"
             data-bs-target="#exampleModal"
             type="button"

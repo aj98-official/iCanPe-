@@ -2,8 +2,10 @@ import React from "react";
 import "./others.scss";
 import pic from "../../assets/images/Arrow-forward.png";
 import Label from "../Label/label";
+import useWindowDimensions from "../../Tools/window-dimensions";
 
 export default function OurStory() {
+  const size = useWindowDimensions();
   return (
     <div className="container py-5 px-5">
       <div className="mb-4">
@@ -12,9 +14,9 @@ export default function OurStory() {
       </div>
       <h1 className="mb-4">Our Story</h1>
       <div className="row">
-        <div className="col-lg-1 col-md-2">
-          <img src={pic} alt="arrow-icon" />
-        </div>
+        {(size > 767) ? <div className="col-lg-1 col-md-2">
+          <img src={pic} alt="arrow-icon" className="img-fluid"/>
+        </div>: ""}
         <div className="col">
           <p>
             ICanPe's digital-first collections platform helps lenders automate

@@ -1,24 +1,27 @@
 import React from "react";
 import pic from "../../assets/images/Arrow-forward.png";
 import pic2 from "../../assets/images/Careers-pic-2.png";
+import useWindowDimensions from "../../Tools/window-dimensions";
 
 import Label from "../Label/label";
-// import PrimaryBtn from "../Buttton/btn";
+import "../Buttton/btn.scss";
 const SubmitYourCv = () => {
+
+  const size = useWindowDimensions();
   return (
     <div className="py-5" style={{ background: "#EEF0F3" }}>
-      <div className="container">
+      <div className="container px-4">
         <div className="my-3">
           {" "}
           <Label text="WORKING WITH US" />
         </div>
         <div className="row">
-          <div className="col-lg-6">
+          <div className="col-lg-7">
             <h1 className="mb-4">Submit Your CV</h1>
             <div className="row">
-              <div className="col-lg-2">
-                <img src={pic} alt="arrow-icon" />
-              </div>
+              {(size > 991) ?<div className="col-lg-2">
+                <img src={pic} alt="arrow-icon" className="img-fluid"/>
+              </div> : ""}
               <div className="col">
                 <p className="py-2 pe-5">
                   Submit your resume here and we will reach out to you soon!{" "}
@@ -31,7 +34,7 @@ const SubmitYourCv = () => {
                     >
                       Name
                     </label>
-                    <div className="col-sm-10">
+                    <div className="col-lg-10">
                       <input
                         type="text"
                         className="form-control"
@@ -47,7 +50,7 @@ const SubmitYourCv = () => {
                     >
                       Email
                     </label>
-                    <div className="col-sm-10">
+                    <div className="col-lg-10">
                       <input
                         type="email"
                         className="form-control"
@@ -60,7 +63,7 @@ const SubmitYourCv = () => {
                     <label className="control-label mb-2 form-label-text ">
                       Phone No.
                     </label>
-                    <div className="col-sm-10">
+                    <div className="col-lg-10">
                       <input
                         type="text"
                         className="form-control"
@@ -73,7 +76,7 @@ const SubmitYourCv = () => {
                     <label className="control-label mb-2 form-label-text ">
                       Select File to Upload
                     </label>
-                    <div className="col-sm-10">
+                    <div className="col-lg-10">
                       <input
                         type="file"
                         className="form-control"
@@ -90,7 +93,7 @@ const SubmitYourCv = () => {
                     >
                     Query (Optional)
                     </label>
-                    <div className="col-sm-10">
+                    <div className="col-lg-10">
                       <textarea
                         className="form-control"
                         rows="4"
@@ -99,7 +102,7 @@ const SubmitYourCv = () => {
                     </div>
                   </div>
                   <div className="form-group">
-                    <div className="mt-4 col-sm-10">
+                    <div className="mt-4 col-lg-10">
                       <button
                         type="submit"
                         className="btn primary-btn ms-auto"
@@ -113,9 +116,9 @@ const SubmitYourCv = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-6">
+          <div className={"col-lg-5 " + ((size <= 991) ? "mt-5" : "")}>
             <button
-              style={{ width: "80%", borderRadius: "80px" }}
+              style={{ width: "100%", borderRadius: "80px" }}
               className="btn btn-primary btn-lg"
             >
               View Open Roles{" "}
