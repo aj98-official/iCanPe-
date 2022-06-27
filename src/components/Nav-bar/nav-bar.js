@@ -42,11 +42,11 @@ const NavBar = ({type}) => {
                 Our Offerings
               </a>
             </li>
-            <li className="nav-item">
+            {(type === "home") ?<li className="nav-item">
               <a className="nav-link" href="/#contact">
                 Contact Us
               </a>
-            </li>
+            </li>: ""}
             <li className="nav-item">
               <a className={"nav-link " + ((type === "careers") ?"active" : "")}  onClick={() => navigate('/careers')} >
                 Careers
