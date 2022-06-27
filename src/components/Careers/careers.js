@@ -8,7 +8,7 @@ import Footer from "../Footer/footer";
 export default function Careers(){
     return (
         <div>
-            <NavBar />
+            <NavBar type = "careers"/>
             <CareersHeader />
             <WorkingWithUs />
             <SubmitYourCv />

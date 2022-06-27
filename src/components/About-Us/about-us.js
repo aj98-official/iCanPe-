@@ -10,7 +10,7 @@ import OurLeaderShip from "../Others/our-leadership";
 export default function AboutUs(){
     return (
         <div>
-            <NavBar />
+            <NavBar type ="about-us"/>
             <AboutUsHeader />
             <OurStory />
             <Numbers />

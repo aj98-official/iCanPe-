@@ -3,7 +3,7 @@ import logo from "../../assets/brand-icon/ICPLogo.png";
 import {useNavigate} from 'react-router-dom';
 import "./nav-bar.scss";
 
-const NavBar = () => {
+const NavBar = ({type}) => {
 
   const navigate = useNavigate();
 
@@ -27,18 +27,18 @@ const NavBar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav m-auto mb-2 mb-lg-0">
             <li className="nav-item mb-2">
-              <a className="nav-link active" aria-current="page"  onClick={() => navigate('/')}>
+              <a className={"nav-link " + ((type === "home") ?"active" : "")} aria-current="page"  onClick={() => navigate('/')}>
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link"  onClick={() => navigate('/about-us')}>
+              <a className={"nav-link " + ((type === "about-us") ?"active" : "")}  onClick={() => navigate('/about-us')}>
                 About Us
               </a>
             </li>
 
             <li className="nav-item">
-              <a className="nav-link"  onClick={() => navigate('/our-offerings')}>
+              <a className={"nav-link " + ((type === "our-offerings") ?"active" : "")}  onClick={() => navigate('/our-offerings')}>
                 Our Offerings
               </a>
             </li>
@@ -48,7 +48,7 @@ const NavBar = () => {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link"  onClick={() => navigate('/careers')}>
+              <a className={"nav-link " + ((type === "careers") ?"active" : "")}  onClick={() => navigate('/careers')} >
                 Careers
               </a>
             </li>

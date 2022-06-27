@@ -10,7 +10,7 @@ import Footer from "../Footer/footer";
 export default function OurOfferings(){
     return (
         <div>
-            <NavBar />
+            <NavBar type ="our-offerings"/>
             <OurOfferingsHeader />
             {/* <Solutions />
             <Features /> */}

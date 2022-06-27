@@ -16,7 +16,7 @@ export default function Home (){
   const size = useWindowDimensions();
     return (
         <div>
-          <NavBar />
+          <NavBar type = "home" />
           <Modal />
           <Header />
           <Section1 />
