@@ -42,7 +42,7 @@ const Header = () => {
           </div>
 
           <div className="col-lg-6">
-              {(size < 1200) ?<img className="header-img" src={Box} alt= "box-img"/> : ""}
+              {(size < 1200) ?<img className="img-fluid" src={Box} alt= "box-img"/> : ""}
           </div>
         </div>
       </div>
