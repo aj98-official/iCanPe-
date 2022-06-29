@@ -143,15 +143,24 @@
   background: #2475ea;
 }
 
-.md-purpose-div{
-   margin-left: 10%;
-   width: 70%;
-   padding: 20px 0;
+.md-purpose-div {
+  margin: auto;
+  width: 90%;
+  padding: 20px 0;
+  text-align: center;
 
-   p{
-    font-size: 1.3rem;
-   }
-   h2{
-    font-size: 1.8rem;
-   }
+  p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.sec1-md-img-1{
+  height: 400px;
+  width: 400px;
 }

@@ -53,7 +53,7 @@ const Contact = () => {
             <div className="text">
               <h2>Socials</h2>
               <div className="ms-2">
-                <a href="#!" className="me-4">
+                {/* <a href="#!" className="me-4">
                   <i className="fab fa-facebook-f"></i>
                 </a>
                 <a href="#!" className="me-4">
@@ -61,8 +61,8 @@ const Contact = () => {
                 </a>
                 <a href="#!" className="me-4">
                   <i className="fab fa-instagram"></i>
-                </a>
-                <a href="#!" className="me-4">
+                </a> */}
+                <a href="https://www.linkedin.com/company/canpe/" className="me-4">
                   <i className="fab fa-linkedin"></i>
                 </a>
               </div>

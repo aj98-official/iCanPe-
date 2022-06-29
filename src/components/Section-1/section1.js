@@ -3,6 +3,10 @@ import Background from "../../assets/images/section-1-background.png";
 import Label from "../Label/label";
 import Pic from "../../assets/images/sec1-img.png";
 import Pic2 from "../../assets/images/sec2-img-2.png"
+import Pic3 from "../../assets/images/sec1-md-1.svg";
+import Pic4 from "../../assets/images/sec1-md-2.svg";
+import Pic5 from "../../assets/images/sec1-md-3.svg";
+
 import "./section1.scss";
 
 import useWindowDimensions from "../../Tools/window-dimensions";
@@ -58,7 +62,7 @@ const Section1 = () => {
         ) : (
           <div className="md">
             <div className="">
-              <img className="img-fluid" src={Pic2} alt="product-img" />
+              <img className={"mt-4 " + ((size < 500)?"img-fluid": "sec1-md-img-1" )} src={Pic2} alt="product-img" />
             </div>
 
             <div className="md-purpose-container">
@@ -67,16 +71,25 @@ const Section1 = () => {
                 <p>Delinquency management to enhance RoR by 50%</p>
               </div>
               <div className="md-divider my-4"></div>
+              <div className="d-flex justify-content-center">
+              <img className="img-fluid" src={Pic3} alt="product-img" />
+            </div>
               <div className="md-purpose-div">
                 <h2>Real Time Instant Monitoring</h2>
                 <p>Complete transparency using real time dashboard</p>
               </div>
               <div className="md-divider my-4"></div>
+              <div className="d-flex justify-content-center mt-5">
+              <img className="img-fluid" src={Pic4} alt="product-img" />
+            </div>
               <div className="md-purpose-div">
                 <h2>Minimise Recovery Cost</h2>
                 <p>Scalable and Cost-effective recovery solutions</p>
               </div>
               <div className="md-divider my-4"></div>
+              <div className="d-flex justify-content-center mt-5">
+              <img className="img-fluid" src={Pic5} alt="product-img" />
+            </div>
               <div className="md-purpose-div">
                 <h2>Customised Payment Options</h2>
                 <p>Easing repayment with multiple payment options.</p>

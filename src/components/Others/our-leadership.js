@@ -46,7 +46,7 @@ export default function OurLeaderShip() {
             <p>Founder and CEO, iCanPe</p>
           </div>
           <div className="col-lg-6 ">
-            <button className="lm-btn btn primary-btn">Learn More</button>
+            <a className="lm-btn btn primary-btn" href="https://www.linkedin.com/in/arindamc03">Learn More</a>
             <div className="py-5">
             <img className="img-fluid pro-pic" src={pic} alt="pro-pic"/>
             </div>

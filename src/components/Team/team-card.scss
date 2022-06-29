@@ -1,12 +1,17 @@
 .team-card {
   width: 100%;
 }
-.team-pro-pic {
-  width: 88px;
-  height: 88px;
-}
+// .team-pro-pic {
+//   width: 88px;
+//   height: 88px;
+// }
 .icons {
   color: #d3d3d3;
+  cursor: pointer;
+  a{
+    text-decoration: none;
+    color: #d3d3d3;
+  }
 }
 .team-name {
   color: #333f51;

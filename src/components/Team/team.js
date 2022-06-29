@@ -5,75 +5,41 @@ import background from "../../assets/images/Pattern-Light-2.png";
 // import PrimaryBtn from "../Buttton/btn";
 import TeamCard from "./team-card";
 import Label from "../Label/label";
-import Pic from "../../assets/images/pro-pic-team.png";
+// import Pic from "../../assets/images/pro-pic-team.png";
+import Pic1 from "../../assets/images/arindam-sir.svg";
+import Pic2 from "../../assets/images/rajeev-sir.svg";
+import Pic3 from "../../assets/images/jitendra-sir.svg";
+import Pic4 from "../../assets/images/Saurabh.svg";
+
 
 const Team = () => {
 
   const teamData = [
     {
-      pic: Pic,
-      name: "Ivan Mathews",
+      pic: Pic1,
+      name: "Arindam Choudhury",
       title: "CEO & founder",
-      fb: "#",
-      twitter: "#",
-      insta: "#",
+      linkedin: "https://www.linkedin.com/in/arindamc03"
     },
     {
-      pic: Pic,
-      name: "Ivan Mathews",
-      title: "CEO & founder",
-      fb: "#",
-      twitter: "#",
-      insta: "#",
+      pic: Pic2,
+      name: "Rajeev Airani",
+      title: "Chief Operations Officer",
+      linkedin: "https://www.linkedin.com/in/rajeev-airani-61791021"
     },
     {
-      pic: Pic,
-      name: "Ivan Mathews",
-      title: "CEO & founder",
-      fb: "#",
-      twitter: "#",
-      insta: "#",
+      pic: Pic3,
+      name: "Jitendra Panda",
+      title: "Chief Business Officer",
+      linkedin: "https://www.linkedin.com/in/jitendra-panda-70b65615"
     },
     {
-      pic: Pic,
-      name: "Ivan Mathews",
-      title: "CEO & founder",
-      fb: "#",
-      twitter: "#",
-      insta: "#",
+      pic: Pic4,
+      name: "Saurabh Mishra",
+      title: "VP-Collections Strategy",
+      linkedin: "#"
     },
-    {
-      pic: Pic,
-      name: "Ivan Mathews",
-      title: "CEO & founder",
-      fb: "#",
-      twitter: "#",
-      insta: "#",
-    },
-    {
-      pic: Pic,
-      name: "Ivan Mathews",
-      title: "CEO & founder",
-      fb: "#",
-      twitter: "#",
-      insta: "#",
-    },
-    {
-      pic: Pic,
-      name: "Ivan Mathews",
-      title: "CEO & founder",
-      fb: "#",
-      twitter: "#",
-      insta: "#",
-    },
-    {
-      pic: Pic,
-      name: "Ivan Mathews",
-      title: "CEO & founder",
-      fb: "#",
-      twitter: "#",
-      insta: "#",
-    },
+    
   ];
 
   const divStyle = {
@@ -86,14 +52,14 @@ const Team = () => {
     <div style={divStyle} >
       <div className="container py-5 text-center">
         <div className="my-3"><Label text = "team"/></div>
-        <h1 className="my-2">LeaderShip Team</h1>
+        <h1 className="my-2">Leadership Team</h1>
         <p className="my-3">
           Highly professional and capable of running your business across all
           digital channels.
         </p>
-        <button  className="mx-auto my-4 mt-4 primary-btn btn" > Know More </button> 
+        <a className="mx-auto my-4 primary-btn btn " href="https://www.linkedin.com/company/canpe/" style={{width: "170px"}}> Know More</a>
       
-      <div className="row mb-5 pb-5">
+      <div className="row">
         {teamData.map((data) => {
           console.log(data);
           return (
@@ -102,9 +68,7 @@ const Team = () => {
                 name={data.name}
                 pic={data.pic}
                 title={data.title}
-                fb={data.fb}
-                twitter={data.twitter}
-                insta={data.insta}
+                linkedin = {data.linkedin}
               />
             </div>
           );
