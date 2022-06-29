@@ -3,8 +3,10 @@ import "./header.scss";
 import Modal from "../Modal/modal";
 import Background from "../../assets/images/careers-banner.png";
 import pic from "../../assets/images/careers-banner-pic.png"
+import useWindowDimensions from "../../Tools/window-dimensions";
 
 const CareersHeader = () => {
+  const size = useWindowDimensions();
   const divStyle = {
     backgroundImage: `url(${Background})`,
     backgroundSize: "cover",
@@ -33,7 +35,7 @@ const CareersHeader = () => {
 
             <Modal />
           </div>
-          <div className="col-lg-6 pt-5 ps-5">
+          <div className={"col-lg-6 pt-5 " + ((size > 991) ? "ps-5 mt-5" : "")}>
               <img className="img-fluid" src={pic} alt="banner-img"/>
           </div>
         </div>

@@ -1,9 +1,9 @@
-/* .header{
-margin-bottom: 5%;
-} */
+// .header{
+// margin-bottom: 5%;
+// } 
 
 .head-txt {
-  margin-top: 20%;
+  margin-top: 30%;
   /* display-lg/Bold */
 
   font-family: "Poppins";
@@ -12,7 +12,7 @@ margin-bottom: 5%;
   font-size: 3rem;
   line-height: 3.5rem;
   /* or 125% */
-
+  
   letter-spacing: -0.02em;
 
   /* Gray/900 */
@@ -64,4 +64,17 @@ margin-bottom: 5%;
         font-size: 2.2rem;
         line-height: 2.8rem;
       }
+}
+
+@media (min-width: 991px) {
+  
+  .header{
+   background-position-y: 86%;
+  }
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1300px) {
+   .header{
+     background-position-x: 80%
+   }
 }
